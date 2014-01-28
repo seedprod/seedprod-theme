@@ -17,11 +17,11 @@
       get_template_part('templates/header');
     }
   ?>
-  <div id="main" role="main">
+  <div id="bd" role="main">
   <div id="main-content">
     <div class="container">
       <div class="row">
-      <main class="mainf" <?php echo roots_main_class(); ?>" role="main">
+      <main class="mainf <?php echo roots_main_class(); ?>" role="main">
         <?php include roots_template_path(); ?>
       </main><!-- /.main -->
       <?php if (roots_display_sidebar()) : ?>
