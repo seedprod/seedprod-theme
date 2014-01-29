@@ -28,7 +28,7 @@
           <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/ribbons/ribbon_style1_sale.png" style="position:absolute;right:0"/>
           <div class="head" style="color:#fff; border-top-left-radius:4px; border-top-right-radius:4px; padding:10px 0 20px;">
           <h2 style="color:#fff;margin:0 0 5px 0;padding:0">Developer License</h2>
-          <div class="price proxi-thin" style="font-size:38px"><span style="font-size:20px; text-decoration: line-through; color:#ccc;padding-right:7px;">$99</span>$49</div>
+          <div class="price proxi-thin"><span style="font-size:48px; text-decoration: line-through; color:#333;padding-right:7px;">$99</span>$49</div>
           <div style="font-size:11px;padding-top:5px">For a limited time.</div>
           </div>
           <table class="table table-striped">
@@ -40,14 +40,14 @@ Unlimted Sites</td></tr>
             <tr><td>WordPress MultiSite Support</td></tr>
             <tr><td><a href="/features/">See all the Features</a></td></tr>
           </table>
-          <a id="csp-dev" class="btn btn-primary" href="https://app.sellwp.co/seedprod/cart/add/4" onclick="_gaq.push(['_link','https://app.sellwp.co/seedprod/cart/add/4']); return false;"><i class="fa fa-shopping-cart"></i> Buy Now $49</a>
+          <a id="csp-dev" class="btn btn-lg btn-primary" href="https://app.sellwp.co/seedprod/cart/add/4" onclick="_gaq.push(['_link','https://app.sellwp.co/seedprod/cart/add/4']); return false;"><i class="fa fa-shopping-cart"></i> Buy Now $49</a>
         </div>
       </div>
       <div class="col-sm-4 col-sm-offset-1">
         <div id="personal" class="well" style="padding:0 0 20px 0; position:relative;text-align: center;">
           <div class="head" style="color:#fff; border-top-left-radius:4px; border-top-right-radius:4px; padding:10px 0 20px;">
           <h2 style="color:#fff;margin:0 0 5px 0;padding:0">Personal License</h2>
-          <div class="price proxi-thin" style="font-size:38px">$29</div>
+          <div class="price proxi-thin">$29</div>
          <!--  <div style="font-size:11px;padding-top:5px">Instant Download</div> -->
           </div>
           <table class="table table-striped">
@@ -58,7 +58,7 @@ Unlimted Sites</td></tr>
             <tr><td>Perfect for someone with 1 Website</td></tr>
             <tr><td><a href="/features/">See all the Features</a></td></tr>
           </table>
-          <a id="csp-per" class="btn btn-primary" href="https://app.sellwp.co/seedprod/cart/add/2" onclick="_gaq.push(['_link','https://app.sellwp.co/seedprod/cart/add/2']); return false;"><i class="fa fa-shopping-cart"></i> Buy Now $29</a>
+          <a id="csp-per" class="btn btn-lg btn-primary" href="https://app.sellwp.co/seedprod/cart/add/2" onclick="_gaq.push(['_link','https://app.sellwp.co/seedprod/cart/add/2']); return false;"><i class="fa fa-shopping-cart"></i> Buy Now $29</a>
         </div>
       </div>
     </div>

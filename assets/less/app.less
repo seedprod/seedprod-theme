@@ -15,6 +15,7 @@ body {
 
 h1, h2, h3, h4, h5, h5{
    font-family: 'Yanone Kaffeesatz', sans-serif;
+   color: #333;
 }
 
 /* ==========================================================================
@@ -51,12 +52,12 @@ h1, h2, h3, h4, h5, h5{
 }
 
 .navbar-nav>li>a {
-   padding:25px;
+   padding:18px;
 }
 
 .navbar-default {
-   border-color: #222;
-   background-color: #444;
+   border-color: #333;
+   background-color: hsla(0, 100%, 100%, 0.05);
    box-shadow: 0 1px 0 hsla(0, 100%, 100%, 0.1);
 }
 
@@ -70,15 +71,22 @@ h1, h2, h3, h4, h5, h5{
 }
 
 .navbar-default .navbar-nav>li>a {
-   color: hsl(0, 0%, 70%);
+   color: hsl(0, 0%, 90%);
 }
 
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
-   color: @themeColor;
+   color: #fff;
 }
 
+.navbar-brand{
+  padding: 12px;
+}
 .navbar-brand img{
    width:160px;
+}
+
+#menu-top-menu{
+  padding-top:6px;
 }
 
 /* ==========================================================================
@@ -96,10 +104,11 @@ h1, h2, h3, h4, h5, h5{
 #featured{
    color:#fff;
    text-align: center;
-   padding:40px 0;
+   padding:30px 0;
    h1{
       font-size:38px;
-      margin-bottom:15px
+      margin-bottom:15px;
+      color:#fff;
    }
    .btn{
       padding: 20px 45px;
@@ -118,12 +127,31 @@ h1, h2, h3, h4, h5, h5{
 }
 
 #featured img {
-   margin: 30px 0;
+   margin: 30px auto;
 }
 
 .fp{
    margin-bottom:60px;
    text-align: center;
+}
+
+#fp-testimonials {
+  margin-bottom: 50px;
+  img {
+    float: left;
+    margin: 0 10px 0 0;
+  }
+  cite {
+    color: #999;
+  }
+  blockquote {
+    padding: 0;
+    margin: 0 0 18px;
+    border-left: none;
+    font-family: Georgia,serif;
+    font-style: italic;
+    font-size: 14px;
+  }
 }
 
 
@@ -135,7 +163,7 @@ h1, h2, h3, h4, h5, h5{
 
 #bd{
    background:#fff;
-   padding:60px 0;
+   padding:40px 0;
 }
 
 .page-header {
@@ -158,6 +186,14 @@ border-bottom: none;
 
 
 /* ==========================================================================
+   Blog Page
+   ========================================================================== */
+.blog .page-header{
+  display: none;
+}
+
+
+/* ==========================================================================
    Features Page
    ========================================================================== */
 .product-btns{
@@ -174,6 +210,7 @@ border-bottom: none;
 }
 
 #features-list{
+    font-size:13px;
    .nav-tabs{
       border-bottom:none;
    } 
@@ -194,6 +231,11 @@ border-bottom: none;
 /* ==========================================================================
    Pricing Page
    ========================================================================== */
+
+.price{
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size:48px;
+}
 
 #twitter-widget-1{
    width:100%;
@@ -248,11 +290,12 @@ border-bottom: none;
    text-align: center;
    h1{
       font-size: 42px;
-      margin:0;
+      margin:0 0 10px;
    }
    h3{
-      font-size: 22px;
-      margin:0 0 30px;
+      font-size: 29px;
+      margin:0 0 40px;
+      color: #555;
    }
 }
 
@@ -266,10 +309,25 @@ border-bottom: none;
 
 
 /* ==========================================================================
+   Showcase Page
+   ========================================================================== */
+.showcase .thumbnail{
+  border:none;
+  background-color: transparent;
+  margin-bottom: 5px;
+}
+
+
+/* ==========================================================================
    Sidebar
    ========================================================================== */
 
-.sidebar { }
+.sidebar { 
+
+  .widget h3{
+    color: hsl(0, 0%, 54%);
+  }
+}
 
 
 
@@ -281,8 +339,28 @@ border-bottom: none;
 .hentry time { }
 .hentry .byline { }
 .hentry .entry-content { }
-.hentry footer { }
+.hentry footer { } 
 
+.blog .post-header-meta, .single .post-header-meta{
+  font-size:13px;
+  color: #9A9A9A;
+  margin-bottom:20px;
+  padding-bottom:10px;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.the-comment-link a, .meta-date-cat-tags a{
+  color:#9a9a9a;
+  font-size:13px;
+}
+
+.post img{
+  .img-responsive;
+}
+
+.entry-title{
+  margin-top: 0;
+}
 
 
 /* ==========================================================================
@@ -332,16 +410,130 @@ border-bottom: none;
 }
 
 
+/* ==========================================================================
+   Gravity Forms
+   ========================================================================== */
+
+.gform_wrapper ul {
+  .list-unstyled();
+}
+.gform_wrapper li {
+  .form-group();
+}
+.gform_wrapper form {
+  margin-bottom: 0;
+}
+.gform_wrapper .gfield_required {
+  padding-left: 1px;
+  color: @state-danger-text;
+}
+.ginput_container input,
+.ginput_container select,
+.ginput_container textarea {
+  .form-control();
+}
+.ginput_container textarea {
+  height: auto;
+}
+.gform_button {
+  .btn();
+  .btn-primary();
+}
+.gform_wrapper .gfield_error {
+  .gfield_label {
+    color: @state-danger-text;
+  }
+  input,
+  select,
+  textarea {
+    border-color: @alert-danger-border;
+    background-color: @alert-danger-bg;
+    color: @alert-danger-text;
+    .form-control-focus(@alert-danger-text);
+  }
+}
+.validation_error {
+  .alert();
+  .alert-danger();
+}
+#gforms_confirmation_message {
+  .alert();
+  .alert-success();
+}
+
 
 /* ==========================================================================
    WordPress Generated Classes
    See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes
    ========================================================================== */
 
-.aligncenter { display: block; margin: 0 auto; }
-.alignleft { float: left; }
-.alignright { float: right; }
-figure.alignnone { margin-left: 0; margin-right: 0; }
+.alignnone {
+  margin: 5px 20px 20px 0;
+}
+.aligncenter, div.aligncenter {
+  display: block;
+  margin: 5px auto 5px auto;
+}
+.alignright {
+  float: right;
+  margin: 5px 0 20px 20px;
+}
+.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0;
+}
+.aligncenter {
+  display: block;
+  margin: 5px auto 5px auto;
+}
+a img.alignright {
+  float: right;
+  margin: 5px 0 20px 20px;
+}
+a img.alignnone {
+  margin: 5px 20px 20px 0;
+}
+a img.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0;
+}
+a img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.wp-caption {
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  max-width: 96%;
+  /* Image does not overflow the content area */
+
+  padding: 5px 3px 10px;
+  text-align: center;
+}
+.wp-caption.alignnone {
+  margin: 5px 20px 20px 0;
+}
+.wp-caption.alignleft {
+  margin: 5px 20px 20px 0;
+}
+.wp-caption.alignright {
+  margin: 5px 0 20px 20px;
+}
+.wp-caption img {
+  border: 0 none;
+  height: auto;
+  margin: 0;
+  max-width: 98.5%;
+  padding: 0;
+  width: auto;
+}
+.wp-caption p.wp-caption-text {
+  font-size: 11px;
+  line-height: 17px;
+  margin: 0;
+  padding: 0 4px 5px;
+}
 
 
 

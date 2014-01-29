@@ -6,10 +6,10 @@
 					<div id="footer-1">
 						<h3>SeedProd</h3>
 						<ul class="list-unstyled">
-							<li><a href="/about/" style="padding-left:0">About</a></li>
-							<li><a href="/contact/">Contact</a></li>
-							<li><a href="/testimonials/">Testimonials</a></li>
-							<li><a href="/affiliates/">Affiliates</a></li>
+							<li><a href="http://www.seedprod.com/about/" style="padding-left:0">About</a></li>
+							<li><a href="http://www.seedprod.com/contact/">Contact</a></li>
+							<li><a href="http://www.seedprod.com/testimonials/">Testimonials</a></li>
+							<li><a href="http://www.seedprod.com/affiliates/">Affiliates</a></li>
 							
 						</ul>					
 					</div>
@@ -17,10 +17,10 @@
 				<div class="col-md-2">
 					<div id="footer-2">
 						<ul class="list-unstyled">
-							<li><a href="/terms/">Terms &amp; Conditions</a></li>
-							<li><a href="/refunds/">Refund Policy</a></li>
-							<li><a href="/privacy/">Privacy Policy</a></li>
-							<li><a href="/press-kit/">Press Kit</a></li>
+							<li><a href="http://www.seedprod.com/terms/">Terms &amp; Conditions</a></li>
+							<li><a href="http://www.seedprod.com/refunds/">Refund Policy</a></li>
+							<li><a href="http://www.seedprod.com/privacy/">Privacy Policy</a></li>
+							<li><a href="http://www.seedprod.com/press-kit/">Press Kit</a></li>
 						</ul>							
 					</div>
 				</div>
@@ -40,5 +40,12 @@
 
 <!-- Twitter Platform -->
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<script type="text/javascript">
+
+  jQuery(document).ready(function($){
+    // Target your .container, .wrapper, .post, etc.
+    $(".post").fitVids();
+  });
+</script>
 
 <?php wp_footer(); ?>

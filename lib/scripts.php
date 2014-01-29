@@ -11,25 +11,26 @@
  * 3. /theme/assets/js/main.min.js (in footer)
  */
 function roots_scripts() {
-  wp_enqueue_style('roots_main', get_template_directory_uri() . '/assets/css/main.min.css', false, '886d6ef725f3192e97de1b0727bde1dc');
+  wp_enqueue_style('roots_main', get_template_directory_uri() . '/assets/css/main.min.css', false, 'bac6d64efc7cee528e789e1a01b9b497');
 
   // jQuery is loaded using the same method from HTML5 Boilerplate:
   // Grab Google CDN's latest jQuery with a protocol relative URL; fallback to local if offline
   // It's kept in the header instead of footer to avoid conflicts with plugins.
-  if (!is_admin() && current_theme_supports('jquery-cdn')) {
-    wp_deregister_script('jquery');
-    wp_register_script('jquery', '//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js', array(), null, false);
-    add_filter('script_loader_src', 'roots_jquery_local_fallback', 10, 2);
-  }
+  // if (!is_admin() && current_theme_supports('jquery-cdn')) {
+  //   wp_deregister_script('jquery');
+  //   wp_register_script('jquery', '//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js', array(), null, false);
+  //   add_filter('script_loader_src', 'roots_jquery_local_fallback', 10, 2);
+  // }
 
-  if (is_single() && comments_open() && get_option('thread_comments')) {
-    wp_enqueue_script('comment-reply');
-  }
-
+  // if (is_single() && comments_open() && get_option('thread_comments')) {
+  //   wp_enqueue_script('comment-reply');
+  // }
+  wp_register_script('fitvid', get_template_directory_uri() . '/assets/js/vendor/jquery.fitvids.js', array(), null, false);
   wp_register_script('modernizr', get_template_directory_uri() . '/assets/js/vendor/modernizr-2.7.0.min.js', array(), null, false);
-  wp_register_script('roots_scripts', get_template_directory_uri() . '/assets/js/scripts.min.js', array(), '32eea632560b1af74a69d4ad5d9d9a8e', true);
-  wp_enqueue_script('modernizr');
+  wp_register_script('roots_scripts', get_template_directory_uri() . '/assets/js/scripts.min.js', array(), 'a73cae976a831e3dabb8fa7b3c483a23', true);
+  //wp_enqueue_script('modernizr');
   wp_enqueue_script('jquery');
+  wp_enqueue_script('fitvid');
   wp_enqueue_script('roots_scripts');
 }
 add_action('wp_enqueue_scripts', 'roots_scripts', 100);

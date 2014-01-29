@@ -22,12 +22,42 @@
 		</div>
 		<!-- Testimonials -->
 
-		<div id="fp-testimonials" class="row fp">
-		  <div class="col-md-6">
-			<blockquote class="twitter-tweet" lang="en"><p>Used <a href="https://twitter.com/seedprod">@SeedProd</a> for my “coming soon” page…. pretty sweet plugin! <a href="http://t.co/9sfNIAwkOo">http://t.co/9sfNIAwkOo</a></p>&mdash; BobWP (@bobWP) <a href="https://twitter.com/bobWP/statuses/423118017828880384">January 14, 2014</a></blockquote>
+	<div id="fp-testimonials" class="row">
+		  <div class="col-md-3">
+			<div class="fp-testimonials">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/buzz-1.jpg" class="thumbnail">
+					<blockquote>
+					"John, Just wanted to add my 2c that this plugin is perfect. Being able to easily integrate with MailChimp and also add a link to Wufoo forms (in our case) is a major win. WordPress rocks, you rock!"
+					</blockquote>
+				<cite>&mdash; Kris | research2zero.com</cite>
+			</div>
 		  </div>
-		  <div class="col-md-6">
-			<blockquote class="twitter-tweet" lang="en"><p>Wow - <a href="https://twitter.com/seedprod">@seedprod</a> wins best and fastest tech support response I&#39;ve seen in a while. :)</p>&mdash; Michelle Shaeffer (@MichelleShaeffr) <a href="https://twitter.com/MichelleShaeffr/statuses/424209962022477825">January 17, 2014</a></blockquote>
+		  <div class="col-md-3">
+			<div>
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/buzz-0.jpg" class="thumbnail">
+					<blockquote>
+					"Thanks for the fast response and the video -- you rock!! You are the type of plugin developer I gravitate toward working with! ;-) "
+					</blockquote>
+				<cite>&mdash; Judith | theistudio.com</cite>
+			</div>
+		  </div>
+		  <div class="col-md-3">
+			<div>
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/buzz-2.jpg" class="thumbnail">
+					<blockquote>
+					"John has a hit with SeedProd! Not only is his plugin a godsend, the support was immediate and impressive."
+					</blockquote>
+				<cite>&mdash; Dale Lafayette | theamenetwork.com</cite>
+			</div>
+		  </div>  
+		  <div class="col-md-3">
+			<div>
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/buzz-3.jpg" class="thumbnail">
+					<blockquote>
+					"I'm fairly special when it comes to all things techy and an absolute beginner at WP. I just wanted to say that I love your plugin. Thank you so much for sharing your skills, LOVE YOUR WORK!"
+					</blockquote>
+				<cite>&mdash; Sarah Bond</cite>
+			</div>
 		  </div>
 		</div>
 
