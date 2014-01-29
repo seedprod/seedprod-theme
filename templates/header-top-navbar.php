@@ -8,7 +8,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="http://www.seedprod.com"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/seedprod-logo-white.png" alt="SeedProd Logo"></a>
+      <a class="navbar-brand" href="<?php echo home_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/seedprod-logo-white.png" alt="SeedProd Logo"></a>
     </div>
 
     <nav class="collapse navbar-collapse" role="navigation">
