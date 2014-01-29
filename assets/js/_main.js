@@ -44,4 +44,4 @@ var UTIL = {
   }
 };
 
-$(document).ready(UTIL.loadEvents);
+//$(document).ready(UTIL.loadEvents);

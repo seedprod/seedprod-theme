@@ -17,14 +17,14 @@ h1, h2, h3, h4, h5, h5{
    font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
+/* ==========================================================================
+   Common Classes
+   ========================================================================== */
 .thin{
    font-weight: 200;
 }
 
 .well {
-   min-height: 20px;
-   padding: 19px;
-   margin-bottom: 20px;
    background-color: hsl(0, 0%, 98%);
    background-image: -moz-linear-gradient(top,#ffffff,#f5f5f5);
    background-image: -webkit-gradient(linear,0 0,0 100%,from(hsl(0, 100%, 100%)),to(hsl(0, 0%, 96%)));
@@ -33,15 +33,7 @@ h1, h2, h3, h4, h5, h5{
    background-image: linear-gradient(to bottom,hsl(0, 100%, 100%),hsl(0, 0%, 96%));
    background-repeat: repeat-x;
    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff',endColorstr='#fff5f5f5',GradientType=0);
-   border: none;
-   -webkit-border-radius: 4px;
-   -moz-border-radius: 4px;
-   border-radius: 4px;
-   -webkit-box-shadow: 0 1px 3px hsla(0, 0%, 0%, 0.15);
-   -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.15);
-   box-shadow: 0 1px 3px hsla(0, 0%, 0%, 0.15);
 }
-
 
 
 /* ==========================================================================
@@ -88,6 +80,10 @@ h1, h2, h3, h4, h5, h5{
 .navbar-brand img{
    width:160px;
 }
+
+/* ==========================================================================
+   Front Page Featured Area
+   ========================================================================== */
 
 #banner-bar{
    color: hsl(0, 0%, 47%);
@@ -142,15 +138,14 @@ h1, h2, h3, h4, h5, h5{
    padding:60px 0;
 }
 
-/* ==========================================================================
-   Features Page
-   ========================================================================== */
-.product-btns{
-   margin:-100px 0 80px 200px;
-
+.page-header {
+padding-bottom: 0;
+margin: 0;
+border-bottom: none;
+   h1{
+      margin:0;
+   }
 }
-
-
 
 /* ==========================================================================
    Primary Content
@@ -161,6 +156,113 @@ h1, h2, h3, h4, h5, h5{
 /* Gallery Shortcode */
 .gallery-row { padding: 15px 0; }
 
+
+/* ==========================================================================
+   Features Page
+   ========================================================================== */
+.product-btns{
+   margin:-100px 0 80px 200px;
+
+}
+
+.fl-feature h3{
+   display:inline;
+}
+
+#features-tabs{
+   margin-bottom:1px;
+}
+
+#features-list{
+   .nav-tabs{
+      border-bottom:none;
+   } 
+   small{
+     display:block;
+     color:#999;
+   }
+   .nav>li>a, .nav>li>a:link {
+      background-color: hsl(0, 0%, 97%);
+   }
+}
+
+.fl-feature li{
+   padding:2px 0;
+}
+
+
+/* ==========================================================================
+   Pricing Page
+   ========================================================================== */
+
+#twitter-widget-1{
+   width:100%;
+}
+
+#developer{
+    -webkit-box-shadow: 0px 0px 33px 0px rgba(48, 48, 48, 0.49);
+        box-shadow: 0px 0px 33px 0px rgba(48, 48, 48, 0.49);
+}
+
+#developer .head{
+  background-color: #5F8D3D;
+  background-image: linear-gradient(top,#7EAD50,#5F8D3D);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7ead50',endColorstr='#5f8d3d');
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7ead50',endColorstr='#5f8d3d');
+  background: -ms-linear-gradient(top,#7EAD50,#5F8D3D);
+  background: -moz-linear-gradient(top,#7EAD50,#5F8D3D);
+  background: -o-linear-gradient(top,#7EAD50,#5F8D3D);
+  background: -webkit-linear-gradient(top,#7EAD50,#5F8D3D);
+  background: -webkit-gradient(linear,left top,left bottom,color-stop(0,#7EAD50),color-stop(1,#5F8D3D));
+}
+
+#personal .head{
+  background-color: #90AD42;
+  background-image: linear-gradient(top,#AFC457,#90AD42);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#afc457',endColorstr='#90ad42');
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#afc457',endColorstr='#90ad42');
+  background: -ms-linear-gradient(top,#AFC457,#90AD42);
+  background: -moz-linear-gradient(top,#AFC457,#90AD42);
+  background: -o-linear-gradient(top,#AFC457,#90AD42);
+  background: -webkit-linear-gradient(top,#AFC457,#90AD42);
+  background: -webkit-gradient(linear,left top,left bottom,color-stop(0,#AFC457),color-stop(1,#90AD42));
+}
+
+#business .head{
+  background-color: #2C7548;
+  background-image: linear-gradient(top,#3A985F,#2C7548);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3a985f',endColorstr='#2c7548');
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3a985f',endColorstr='#2c7548');
+  background: -ms-linear-gradient(top,#3A985F,#2C7548);
+  background: -moz-linear-gradient(top,#3A985F,#2C7548);
+  background: -o-linear-gradient(top,#3A985F,#2C7548);
+  background: -webkit-linear-gradient(top,#3A985F,#2C7548);
+  background: -webkit-gradient(linear,left top,left bottom,color-stop(0,#3A985F),color-stop(1,#2C7548));
+}
+
+#pricing-plans{
+  margin-bottom:80px;
+}
+
+#pricing-plans{
+   text-align: center;
+   h1{
+      font-size: 42px;
+      margin:0;
+   }
+   h3{
+      font-size: 22px;
+      margin:0 0 30px;
+   }
+}
+
+#pricing-testimonials{
+  margin-bottom:60px;
+}
+
+#developer table td,#business table td,#personal table td{
+  text-align:center;
+}
 
 
 /* ==========================================================================

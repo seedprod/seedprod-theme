@@ -45,5 +45,7 @@
 		<!-- Integrated With -->
 		<div id="fp-integration-partners" class="fp">
 		    <h3>Integrated with these awesome companies...</h3>
+		    <a href="/features/">
 		    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/integration-logos-color.png">
+			</a>
 		</div>

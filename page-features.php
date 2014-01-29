@@ -1,22 +1,21 @@
-<!-- Banner -->
-<div id="product-banner">
-    <img class="thumbnail img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/banner-coming-soon-pro.jpg">
-    <!-- Buttons -->
-    <div class="product-btns">
-        <a href="/pricing/" class="btn btn-lg btn-primary"><i class="fa fa-shopping-cart"></i> See Pricing</a> 
-    </div>
-</div>
+	<!-- Banner -->
+	<div id="product-banner">
+	    <img class="thumbnail img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/banner-coming-soon-pro.jpg">
+	    <!-- Buttons -->
+	    <div class="product-btns">
+	        <a href="/pricing/" class="btn btn-lg btn-primary"><i class="fa fa-shopping-cart"></i> See Pricing</a> 
+	    </div>
+	</div>
 				
 
 		<!-- Feature List -->
-		<div id="features-tb-wrapper">
-			<ul id="features-tb" class="nav nav-tabs">
+		<div id="features-list">
+			<ul id="features-tabs" class="nav nav-tabs">
 			  <li class="active"><a href="#features" data-toggle="tab"><i class="fa fa-list"></i> Features</a></li>
-			  <li><a href="#screenshots" data-toggle="tab"><i class="fa fa-picture"></i> Screenshots</a></li>
-			  <li><a href="#video" data-toggle="tab"><i class="fa fa-facetime-video"></i> Video</a></li>
-			  <li><a href="#preview" data-toggle="tab"><i class="fa fa-eye-open"></i> Live Preview</a></li>
-			  <li><a href="#try" data-toggle="tab"><i class="fa fa-thumbs-up"></i> Try Before You Buy</a></li>
-<!-- 			  <li><a href="#changelog" data-toggle="tab"><i class="icon-list-alt"></i> Changelog</a></li> -->
+			  <li><a href="#screenshots" data-toggle="tab"><i class="fa fa-picture-o"></i> Screenshots</a></li>
+			  <li><a href="#video" data-toggle="tab"><i class="fa fa-video-camera"></i> Video</a></li>
+			  <li><a href="#preview" data-toggle="tab"><i class="fa fa-desktop"></i> Live Preview</a></li>
+			  <li><a href="#try" data-toggle="tab"><i class="fa fa-rocket"></i> Try Before You Buy</a></li>
 			</ul>
 		<div class="tab-content">
 		  <div class="tab-pane active" id="features">
@@ -24,7 +23,7 @@
 		  		<div id="feature-list" class="row">
 		  			<div class="col-md-4">
 			  			<div class="fl-feature" class="clearfix">
-					      <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon-wordpress.png" style="width:32px">
+					      <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icon-wordpress.png" style="width:32px">
 					      <h3>Compatible</h3>
 			  				<ul>
 			  					<li>Works with any WordPress Theme
@@ -41,7 +40,7 @@
 			  				</ul>
 			  			</div>
 			  			<div class="fl-feature" class="clearfix">
-					      <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/lock_closed.png" style="width:32px">
+					      <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/lock_closed.png" style="width:32px">
 					      <h3>Access Controls</h3>
 			  				<ul>
 			  					<li>Visible to non logged in Users
@@ -60,7 +59,7 @@
 		  			</div>
 		  			<div class="col-md-4">
 		  				<div class="fl-feature" class="clearfix">
-					      <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/chimpy.png" style="width:32px">
+					      <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/chimpy.png" style="width:32px">
 					      <h3>Email Marketing &amp; Data Capture</h3>
 			  				<ul>
 			  					<li>MailChimp with Groups Integration</li>
@@ -80,7 +79,7 @@
 			  				</ul>
 			  			</div>
 			  			<div class="fl-feature" class="clearfix">
-					      <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/desktop_into_the_sun.png" style="width:32px">
+					      <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/desktop_into_the_sun.png" style="width:32px">
 					      <h3>Design</h3>
 			  				<ul>
 			  					<li>Custom Look &amp; Feel
@@ -103,7 +102,7 @@
 		  			</div>
 		  			<div class="col-md-4">
 		  				<div class="fl-feature" class="clearfix">
-					      <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/web_blue.png" style="width:32px">
+					      <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/web_blue.png" style="width:32px">
 					      <h3>Social</h3>
 			  				<ul>
 			  					<li>Social Follow Icons
@@ -116,7 +115,7 @@
 			  				</ul>
 			  			</div>
 			  			<div class="fl-feature" class="clearfix">
-					      <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/star.png" style="width:32px">
+					      <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/star.png" style="width:32px">
 					      <h3>Misc</h3>
 			  				<ul>
 			  					<li>Search Engine Optimized
@@ -159,7 +158,7 @@
 				</div>
 				<br>
 				<p>
-					<a href="/testimonials/">See More Reviews <i class="fa fa-hand-right"></i></a>
+					<a href="/testimonials/">See More Reviews <i class="fa fa-users"></i></a>
 				</p>
 		  	</div>
 
@@ -250,3 +249,23 @@
 		<a href="/pricing/" class="btn btn-lg btn-primary"><i class="fa fa-shopping-cart"></i> See Pricing</a> 
 		</div>
 	</div>
+
+	<script>
+		jQuery(document).ready(function($) {
+			$('#features-tabs').click(function (e) {
+			  e.preventDefault();
+			  $(this).tab('show');
+			});
+			$('#features-tabs a:first').tab('show');
+			$('#features-tabs li:eq(4) a').click(function (e) {
+				//location.href = 'http://demo.seedprod.com'
+				//$('#features-tabs a:first').tab('show');
+				window.open('http://demo.seedprod.com');
+			});
+			$('#features-tabs li:eq(3) a').click(function (e) {
+				//location.href = 'http://demo.seedprod.com'
+				//$('#features-tabs a:first').tab('show');
+				window.open('http://demo.seedprod.com/coming-soon-pro/');
+			});
+		});	
+	</script>
