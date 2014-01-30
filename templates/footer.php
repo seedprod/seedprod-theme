@@ -48,4 +48,11 @@
   });
 </script>
 
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.0/jquery.cookie.min.js"></script>
+<script>
+jQuery( document ).ready(function() {
+if(jQuery.cookie("idev") === undefined){jQuery.cookie("idev", '100----------http%3A%2F%2Fwww.seedprod.com%2Findex.php',{ expires : 90,path    : '/',domain  : '.seedprod.com', });}
+});
+</script>
+
 <?php wp_footer(); ?>
