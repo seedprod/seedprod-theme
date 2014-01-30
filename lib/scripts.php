@@ -11,7 +11,7 @@
  * 3. /theme/assets/js/main.min.js (in footer)
  */
 function roots_scripts() {
-  wp_enqueue_style('roots_main', get_template_directory_uri() . '/assets/css/main.min.css', false, '6b4fbf227d3576044f3719eec3c17f24');
+  wp_enqueue_style('roots_main', get_template_directory_uri() . '/assets/css/main.min.css', false, 'a55c0465e085f55846b3632a7faef2f3');
 
   // jQuery is loaded using the same method from HTML5 Boilerplate:
   // Grab Google CDN's latest jQuery with a protocol relative URL; fallback to local if offline
@@ -27,7 +27,7 @@ function roots_scripts() {
   // }
   wp_register_script('fitvid', get_template_directory_uri() . '/assets/js/vendor/jquery.fitvids.js', array(), null, false);
   wp_register_script('modernizr', get_template_directory_uri() . '/assets/js/vendor/modernizr-2.7.0.min.js', array(), null, false);
-  wp_register_script('roots_scripts', get_template_directory_uri() . '/assets/js/scripts.min.js', array(), 'a73cae976a831e3dabb8fa7b3c483a23', true);
+  wp_register_script('roots_scripts', get_template_directory_uri() . '/assets/js/scripts.min.js', array(), '68c273bb754ec421bc5e249b066084bc', true);
   //wp_enqueue_script('modernizr');
   wp_enqueue_script('jquery');
   wp_enqueue_script('fitvid');

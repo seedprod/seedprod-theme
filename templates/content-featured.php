@@ -9,7 +9,7 @@
 	<a href="/features/" class="btn btn-primary btn-lg">
 		<span class="thin">See</span> Features
 	</a>
-	&nbsp;&nbsp;&nbsp;
+	
 	<a href="/pricing/" class="btn btn-primary btn-lg">
 		<span class="thin">See</span> Pricing
 	</a>

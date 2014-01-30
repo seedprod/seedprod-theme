@@ -89,6 +89,13 @@ h1, h2, h3, h4, h5, h5{
   padding-top:6px;
 }
 
+.navbar-collapse {
+  border-top:none;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: hsl(0, 0%, 37%);
+}
 /* ==========================================================================
    Front Page Featured Area
    ========================================================================== */
@@ -542,9 +549,18 @@ a img.aligncenter {
    Media Queries
    ========================================================================== */
 
-@media (min-width: @screen-sm-min) { }
+@media (max-width: 768px) {
+    #menu-top-menu{
+        float:left !important;
+        li a{
+            padding: 10px;
+        }
+    }
+ }
 
-@media (min-width: @screen-md-min) { }
+@media (min-width: @screen-md-min) { 
+
+}
 
 @media (min-width: @screen-lg-min) { }
 
