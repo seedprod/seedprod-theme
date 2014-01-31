@@ -44,7 +44,7 @@
 
   jQuery(document).ready(function($){
     // Target your .container, .wrapper, .post, etc.
-    $(".post").fitVids();
+    $(".post, .embed-youtube, .knowledgebase-content").fitVids();
   });
 </script>
 
